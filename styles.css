@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,30 +6,162 @@
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
+
+
+body {
+    background-image: url(img/imagenprincipal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*aca estilando el menu de navegacion*/
-header nav img{
+.navbar {
+    height: 5rem;
+}
+
+header nav img {
     width: 5rem;
     height: 5rem;
 }
 
 .nav-menu {
-display: flex;
+    display: flex;
 }
 
-.nav-menu li{
+.nav-menu li {
     margin-left: 3.5rem;
 }
-.nav-menu li a:hover{
+
+.nav-menu li a:hover {
     border-bottom: 0.20rem solid #efb810;
     color: black;
 }
 
-.contenido-1 img{
-    width: 500px;
-    height: 100%;
+.abrir-menu {
+    display: none;
+}
+
+
+
+.contenido-vacio {
+    height: 5rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.contenido-1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contenido-1 img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.contenido-1 p {
+    margin-top: 2rem;
+}
+
+.Inicio {
+    color: white;
+}
+
+.container-fluid i {
+    display: none;
+}
+
+
+
+@media screen and (max-width:744px) {
+
+    body {
+        display: flex;
+    }
+
+    header {
+        height: 100vh;
+        background-color: rgba(245, 245, 220, 0.384);
+    }
+
+    main {
+        width: fit-content;
+    }
+
+    .container-fluid i {
+        display: block;
+        height: 30px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        padding-left: 0px;
+        margin: 0 auto;
+    }
+
+    .nav-menu i {
+        display: none;
+    }
+
+    .nav-menu li {
+        margin-top: 5rem;
+        text-align: center;
+
+    }
+
+    .nav-menu li a {
+        font-size: 2rem;
+        border-left:2px solid #efb810;
+        border-bottom: 1px solid white;
+        padding: 1px 10px;
+        color: whitesmoke;
+    }
+        
+
+.nav-menu li a:hover{
+        background: white;
+        color:black;
+        box-shadow: 0 0 10px yellow, 0 0 40px #f5f4f4, 0 0 80px orange;
+        transition-delay: 1s;
+     }
+
+
+    /* Modificaciones al cerrar el menu */
+    #aside.active {
+        width: 95px;
+        transition: all .4s ease;
+        color: white;
+    }
+
+    #aside.active .nav-menu {
+        padding-left: 1.4rem;
+        margin: 0;
+    }
+
+    #aside.active li {
+        display: none;
+    }
+
+    #aside.active nav {
+        flex-direction: column;
+    }
+
+    #aside.active i {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem auto;
+    }
+
+
 }
 
