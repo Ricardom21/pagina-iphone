@@ -243,7 +243,63 @@ margin-bottom: 5%;
     line-height: 1.5;
 }
 
+/*ACA COMIENZA LA SECCION SERVICIOS*/
+.main{
+    text-align: center;
+}
 
+.main h2{
+    font-size: 32px;
+    margin-top: 115px;
+    color: white;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+.section img{
+    width: 0;
+    height: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition:  .5s ease;
+    max-width: 100%;
+}
+
+.section img:hover{
+    cursor: crosshair;
+    width: 300px;
+opacity: 1;
+filter: contrast(120%);
+
+}
+
+.descripcion {
+    text-align: center;
+    padding: 50px 0;
+    min-height: 300px;
+    color: white;
+    border: 1px solid #efb810;
+    box-shadow: 1px 2px 2px 1px #efb810;
+    max-width: 800px; /* ajustar según tus necesidades */
+    margin: 0 auto; /* centra la sección horizontalmente */
+  }
+  
+
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 /*aqui empezamos a modificar el footer*/
 
@@ -393,8 +449,43 @@ footer{
             height: auto;
             margin-right: 10px;
           }
+
+          /*aca agrego el codigo de la seccion servicios*/
+
+           
+  .main h2 {
+    font-size: 28px;
+    margin-top: 50px;
+  }
+
+ 
+  .section {
+    width: 90%;
+    padding:50px 10px;
+    margin-bottom: 50px;
+  }
+
+  
+  .section img {
+    height: 200px;
+    opacity: 1;
+    transition: none;
+    margin-bottom: 20px;
+  }
+
+  
+  .descripcion {
+    padding: 50px 0;
+    min-height: 300px;
+   font-size: 18px;
+   margin-top: 50px;
+  }
+  .footer {
+    position: static;
+    margin-top: 50px;
+  }
           
-          /* Estilos para el pie de página */
+/* Estilos para el pie de página */
           footer {
             display: flex;
             flex-direction: column;
